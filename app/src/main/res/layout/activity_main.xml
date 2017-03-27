@@ -18,13 +18,13 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    Shader 方式的浪
+    <!--Shader 方式的浪-->
     <com.kj.anim.wave.doublewaves.view.DoubleWavesShaderView
     android:layout_width="1920px"
     android:layout_height="1080px"
     android:layout_marginTop="95px" />
 
-    <!--&lt;!&ndash;计算 方式的浪&ndash;&gt;-->
+    <!--计算 方式的浪-->
     <!--<com.kj.anim.wave.doublewaves.view.DoubleWavesCalculateView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
