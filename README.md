@@ -10,5 +10,7 @@ Can be adjusted according to demand, specifically to see the method in the class
 ![image](https://github.com/NickKJ/WavesView/blob/master/Shader%20way%E2%80%99s%20Monitors.png)
 <br>
 
-### Calculate Way
+### Calculate Way <br>
+![img](https://github.com/NickKJ/WavesView/blob/master/DoubleWaves%EF%BC%88Calculate%20way%EF%BC%89.gif)
+![image](https://github.com/NickKJ/WavesView/blob/master/Calculate%20way's%20monitors.png)
 
