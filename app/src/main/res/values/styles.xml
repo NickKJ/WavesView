@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="StartAppTheme" parent="Base.Theme.AppCompat">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

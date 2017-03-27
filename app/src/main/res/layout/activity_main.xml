@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kj="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:background="@android:color/white">
+
+    <!--<ImageView-->
+    <!--android:layout_width="1920px"-->
+    <!--android:layout_height="480px"-->
+    <!--android:src="@drawable/pic_wave_tt"/>-->
+
+    <!--<com.kj.anim.wave.doublewaves.view.WaveViewDraw-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|right"-->
+    <!--kj:wave_duration="8000" />-->
+
+    <!--<include-->
+    <!--layout="@layout/wavepicview_bg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.kj.anim.wave.doublewaves.view.DoubleWavesShaderView
+        android:layout_width="1920px"
+        android:layout_height="1080px"
+        android:layout_marginTop="95px" />
+
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kj.anim.wave.doublewaves.view.WavePicView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kj="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:orientation="horizontal"
+    kj:center_image="center"
+    kj:left_image="left">
+
+    <!--左边的浪-->
+    <FrameLayout
+        android:layout_width="1920px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="-1920px"
+        android:tag="left">
+
+        <!--浪的下层图-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wave_back" />
+        <!--浪的上层图-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wave_front" />
+
+    </FrameLayout>
+
+    <!--屏幕中间首次显示的浪-->
+    <FrameLayout
+        android:layout_width="1920px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:tag="center">
+
+        <!--浪的下层图-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wave_back" />
+        <!--浪的上层图-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wave_front" />
+
+    </FrameLayout>
+
+</com.kj.anim.wave.doublewaves.view.WavePicView>
