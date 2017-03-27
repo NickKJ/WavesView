@@ -13,7 +13,7 @@
     </declare-styleable>
 
     <!--纯画笔计算-->
-    <declare-styleable name="WaveView">
+    <declare-styleable name="DoubleWavesView">
         <attr name="background_color" format="color"/>
         <attr name="wave_front_acolor" format="color"/>
         <attr name="wave_back_acolor" format="color"/>

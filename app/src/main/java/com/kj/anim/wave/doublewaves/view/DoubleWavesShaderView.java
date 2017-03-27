@@ -67,10 +67,10 @@ public class DoubleWavesShaderView extends View {
 
     private void init(Context context, AttributeSet attrs, int defStyle) {
 
-        TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.WaveView);
+        TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.DoubleWavesView);
 
-        int colorFront = attributes.getColor(R.styleable.WaveView_wave_front_acolor, 0);
-        int colorBack = attributes.getColor(R.styleable.WaveView_wave_back_acolor, 0);
+        int colorFront = attributes.getColor(R.styleable.DoubleWavesView_wave_front_acolor, 0);
+        int colorBack = attributes.getColor(R.styleable.DoubleWavesView_wave_back_acolor, 0);
 
         attributes.recycle();
 

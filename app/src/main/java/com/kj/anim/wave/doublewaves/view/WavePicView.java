@@ -2,6 +2,7 @@ package com.kj.anim.wave.doublewaves.view;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
@@ -16,7 +17,7 @@ import com.kj.anim.wave.doublewaves.R;
  * @version 1.0
  * @title WaveViewDraw
  * @description 实现图片浪的滚动动画操作
- * @company 北京奔流网络信息技术有限公司
+ * 通过动画的方式实现
  * @created 2017/3/24 22:21
  * @changeRecord [修改记录] <br/>
  */
@@ -100,12 +101,12 @@ public class WavePicView extends FrameLayout {
             center_WaveView.setAnimationCacheEnabled(false);
             ObjectAnimator transX_waveLeft = ObjectAnimator.ofFloat(left_WaveView, "translationX", 0, 1920);
             ObjectAnimator transX_waveCenter = ObjectAnimator.ofFloat(center_WaveView, "translationX", 0, 1920);
-            transX_waveLeft.setRepeatMode(Animation.RESTART);
+            transX_waveLeft.setRepeatMode(ValueAnimator.RESTART);
             transX_waveLeft.setRepeatCount(Animation.INFINITE);
-            transX_waveCenter.setRepeatMode(Animation.RESTART);
+            transX_waveCenter.setRepeatMode(ValueAnimator.RESTART);
             transX_waveCenter.setRepeatCount(Animation.INFINITE);
             AnimatorSet animatorSet = new AnimatorSet();
-            animatorSet.setDuration(8000);
+            animatorSet.setDuration(16000);
             animatorSet.setInterpolator(new LinearInterpolator());
             animatorSet.playTogether(transX_waveLeft, transX_waveCenter);
             animatorSet.start();

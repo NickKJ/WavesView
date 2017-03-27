@@ -5,25 +5,35 @@
     android:layout_height="1080px"
     android:background="@android:color/white">
 
-    <!--<ImageView-->
-    <!--android:layout_width="1920px"-->
-    <!--android:layout_height="480px"-->
-    <!--android:src="@drawable/pic_wave_tt"/>-->
-
+    <!--图片移动 方式的浪-->
     <!--<com.kj.anim.wave.doublewaves.view.WaveViewDraw-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="wrap_content"-->
     <!--android:layout_gravity="bottom|right"-->
-    <!--kj:wave_duration="8000" />-->
+    <!--kj:wave_duration="16000" />-->
 
+    <!--图片动画 方式的浪-->
     <!--<include-->
     <!--layout="@layout/wavepicview_bg"-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
+    Shader 方式的浪
     <com.kj.anim.wave.doublewaves.view.DoubleWavesShaderView
-        android:layout_width="1920px"
-        android:layout_height="1080px"
-        android:layout_marginTop="95px" />
+    android:layout_width="1920px"
+    android:layout_height="1080px"
+    android:layout_marginTop="95px" />
+
+    <!--&lt;!&ndash;计算 方式的浪&ndash;&gt;-->
+    <!--<com.kj.anim.wave.doublewaves.view.DoubleWavesCalculateView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--kj:wave_back_acolor="#666837f4"-->
+        <!--kj:wave_back_acolor_after="#006837f4"-->
+        <!--kj:wave_back_alpha="102"-->
+        <!--kj:wave_front_acolor="#4d7743fb"-->
+        <!--kj:wave_front_acolor_after="#007743fb"-->
+        <!--kj:wave_front_alpha="77"-->
+        <!--kj:wave_weight="0.2" />-->
 
 </FrameLayout>

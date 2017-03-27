@@ -23,9 +23,8 @@ import com.kj.anim.wave.doublewaves.R;
 /**
  * @author kangjian
  * @version 1.0
- * @title 类的名称
- * @description 该类主要功能描述
- * @company 北京奔流网络信息技术有限公司
+ * @title WaveViewDraw
+ * @description 运用ValueAnimator 点的移动来实现
  * @created 2017/3/24 23:11
  * @changeRecord [修改记录] <br/>
  */
@@ -39,12 +38,8 @@ public class WaveViewDraw extends View {
 
     private Paint mPaint;
 
-    private Drawable back_wave;
-    private Drawable front_wave;
     private Drawable wave_total;
 
-    private Bitmap back_wave_bp;
-    private Bitmap front_wave_bp;
     private Bitmap wave_total_bp;
 
     private long duration;
@@ -78,7 +73,7 @@ public class WaveViewDraw extends View {
     private void initView(AttributeSet attrs, Context context) {
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.WaveViewDraw);   //动态获取的方式
-        duration = (long) typedArray.getFloat(R.styleable.WaveViewDraw_wave_duration, 8000f);
+        duration = (long) typedArray.getFloat(R.styleable.WaveViewDraw_wave_duration, 16000f);
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         if (WAVE_BITMAP)
@@ -110,26 +105,8 @@ public class WaveViewDraw extends View {
         return bitmap;
     }
 
-//    int width;    //整个浪图的宽度(1920)
-//    int height;   //整个浪图的高度(背景浪+前浪的高度和,因为图是结合在一起的大图)
-//    int back_height;   //后浪的高度
-//    int front_height;  //前浪的高度
-
     private void drawWave(Canvas canvas) {
         float left = currentPoint.getX();
-//        float top = back_wave_bp.getHeight();
-//        float top_front = front_wave_bp.getHeight();
-//        L.i(TAG, "left的值是: " + left + " ,top的值是: " + top);
-//        canvas.drawBitmap(back_wave_bp, left, 1080 - top, mPaint);
-//        canvas.drawBitmap(front_wave_bp, left, 1080 - top_front, mPaint);
-
-//        if(isFirstIn){
-//            width = wave_total_bp.getWidth();     //整个浪图的宽度(1920)
-//            height = wave_total_bp.getHeight();   //整个浪图的高度(背景浪+前浪的高度和,因为图是结合在一起的大图)
-//            back_height = height / 2;                    //后浪的高度
-//            front_height = height - back_height;  //前浪的高度
-//            isFirstIn = false;
-//        }
 
         int offSet = (int) left;
         int start_offSet = 1920 - offSet;
@@ -176,8 +153,6 @@ public class WaveViewDraw extends View {
      * 动画
      */
     private void startWaveAnimation() {
-//        Point startPoint = new Point(-1920, START_POSITION);
-//        Point endPoint = new Point(0, START_POSITION);
         Point startPoint = new Point(0, START_POSITION);
         Point endPoint = new Point(1920, START_POSITION);
         ValueAnimator anim = ValueAnimator.ofObject(new PointEvaluator(), startPoint, endPoint);
