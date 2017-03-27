@@ -13,4 +13,9 @@ Can be adjusted according to demand, specifically to see the method in the class
 ### Calculate Way <br>
 ![img](https://github.com/NickKJ/WavesView/blob/master/DoubleWaves%EF%BC%88Calculate%20way%EF%BC%89.gif)
 ![image](https://github.com/NickKJ/WavesView/blob/master/Calculate%20way's%20monitors.png)
+<br>
 
+### Animation Way <br>
+![img](https://github.com/NickKJ/WavesView/blob/master/DoubleWaves%EF%BC%88Animation%20way%EF%BC%89.gif)
+![image](https://github.com/NickKJ/WavesView/blob/master/Animation%20way's%20monitors.png)
+<br>
